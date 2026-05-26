@@ -1,244 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Virtual</title>
-    <link rel="shortcut icon" href="flavicon.png" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.8rem;
-        }
-        nav {
-            background: #34495e;
-            padding: 1rem 0;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        #produtos {
-            margin-bottom: 4rem;
-        }
-        .produtos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        .produto {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .produto:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        .produto img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .produto-content {
-            padding: 1.2rem;
-        }
-        .produto h3 {
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-        .preco {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #27ae60;
-            margin: 0.8rem 0;
-        }
-        .descricao {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 1.2rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .btn-comprar {
-            display: inline-block;
-            background: #e74c3c;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn-comprar:hover {
-            background: #c0392b;
-        }
-        section h2 {
-            margin-bottom: 1.5rem;
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #2c3e50;
-            color: white;
-            margin-top: 3rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechLoja - Eletrônicos e Tecnologia</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="scr/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <nav>
-        <h1 class="Logo">LojaTech</h1>
-        <ul>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+<header>
+<div class="logo">MalufLoja</div>
+<input type="text" placeholder="Buscar produtos...">
+<button>Buscar</button>
+</header>
 
-    <main>
-        <section id="produtos">
-            <h2>Produtos em Destaque</h2>
-            <div class="produtos-grid">
+<section class="banner">
+<h1>Bem-vindo à MalufLoja</h1>
+<p>Os melhores produtos de tecnologia com os melhores preços</p>
+</section>
 
-                <div class="produto">
-                    <img src="https://static.wixstatic.com/media/71a6c2_025b6844a84d4792a5063331d05f8e0b~mv2.png/v1/fill/w_441,h_543,al_c,lg_1,q_85,enc_avif,quality_auto/fidd-separador.png" alt="NFIDD RGB" title="FIDD RGB">
-                    <div class="produto-content">
-                        <h3>FIDD RGB</h3>
-                        <p class="preco">R$ 702,84</p>
-                        <p class="descricao">Teclado mecânico 60% com Switch Pink Magnético K683BW-RGB PT.</p>
-                        <a href="https://www.amazon.com.br/Teclado-Magn%C3%A9tico-Redragon-Branco-K683BW-RGB/dp/B0DLRSNCZZ/ref=asc_df_B0DLRSNCZZ?mcid=4e7482be6c153a77b8b39432a478daac&tag=googleshopp00-20&linkCode=df0&hvadid=709884703639&hvpos=&hvnetw=g&hvrand=10415509567645012525&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9207545&hvtargid=pla-2387918267480&psc=1&hvocijid=10415509567645012525-B0DLRSNCZZ-&hvexpln=0&language=pt_BR" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<main>
 
-                <div class="produto">
-                    <img src="https://m.media-amazon.com/images/I/61sALnSpjHL._AC_UF894,1000_QL80_.jpg" alt="Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja" title="Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja">
-                    <div class="produto-content">
-                        <h3>Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja</h3>
-                        <p class="preco">R$ 489,99</p>
-                        <p class="descricao">O Teclado Mecânico Gamer Redragon Wyvern Pro RGB une estilo, conforto e alto desempenho. Equipado com Switches Mint Mambo Lineares, proporciona toques suaves e silenciosos, além de hotswap (Pro Swap) compatível com switches mecânicos de 5 pinos. Seu layout ABNT2 em formato full size é perfeito para quem não abre mão do teclado numérico.</p>
-                        <a href="https://www.redragon.store/teclado-mecanico-gamer-redragon-wyvern-pro-rgb-branco-preto-e-laranja" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="titulo-categoria">
+<h2>Produtos em Destaque</h2>
+<a href="#">Ver todos →</a>
+</div>
 
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/178191539/ad51476f01.jpg" alt="Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)" title="Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)">
-                    <div class="produto-content">
-                        <h3>Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)</h3>
-                        <p class="preco">R$ 80,00</p>
-                        <p class="descricao">Eleve sua experiência gamer com o Switch Mecânico Redragon Bullet QT. Desenvolvido para quem busca precisão, resposta rápida e sensação tátil marcante, esse kit de 24 unidades é perfeito para quem deseja personalizar o teclado mecânico com performance de alto nível.</p>
-                        <a href="https://www.redragon.store/switch-para-teclado-mecanico-tactile-kit-com-24-modelo-bullet-qt" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
-            
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/1318/1318167/produto/62980808/0f67d8c4f4.jpg     " alt="Kit com 8 switch para Teclados Mecânicos Redragon MKII" title="Kit com 8 switch para Teclados Mecânicos Redragon MKII">
-                    <div class="produto-content">
-                        <h3>Kit com 8 switch para Teclados Mecânicos Redragon MKII</h3>
-                        <p class="preco">R$ 40,00</p>
-                        <p class="descricao">O Kit com 8 Switches Redragon MK2 é a solução ideal para quem deseja personalizar, testar ou substituir switches em teclados mecânicos Redragon compatíveis com tecnologia DIY (switches removíveis).Perfeito para quem quer experimentar diferentes tipos de acionamento antes de adquirir um novo teclado ou realizar a substituição de teclas específicas para melhorar a performance em jogos e digitação.</p>
-                        <a href="https://www.redragon.store/kitswitches" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
 
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3jOEqtCweKL3iA5rZKl0J86EkpuA8vbTFg&s" alt="Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT" title="Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT">
-                    <div class="produto-content">
-                        <h3>Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT</h3>
-                        <p class="preco">R$ 99,00</p>
-                        <p class="descricao">Se você busca o máximo de leveza possível para performance competitiva, o Redragon Bludhound Lite M617-LIT foi feito para isso.</p>
-                        <a href="https://www.redragon.store/mouse-gamer-redragon-bludhound-lite-preto-ultraleve-41g-paw3313-10000-dpi-honeycomb-cabo-usb-c-paracord-m617-lit" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<section id="produtos">
+<h2>Produtos em Destaque</h2>
+<div class="produtos-grid">
 
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/376158678/7f632be77b756dbb46f0f478b238a867-i25aj4dmxa.png" alt="Mouse Gamer Redragon Griffin Preto - M602-KS V2" title="Mouse Gamer Redragon Griffin Preto - M602-KS V2">
-                    <div class="produto-content">
-                        <h3>Mouse Gamer Redragon Griffin Preto - M602-KS V2</h3>
-                        <p class="preco">R$ 142,00</p>
-                        <p class="descricao">Descubra o poder do Mouse Redragon Griffin Wireless M602-KS, projetado para oferecer desempenho excepcional em qualquer ambiente de trabalho ou jogo. Equipado com sensor Pixart PAW3104 e ajustável até 8000 DPI, este mouse garante precisão milimétrica e resposta ágil para movimentos rápidos e precisos.</p>
-                        <a href="https://www.redragon.store/mouse-gamer-redragon-griffin-preto-m602-ks" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="produto">
+<img src="https://static.wixstatic.com/media/71a6c2_025b6844a84d4792a5063331d05f8e0b~mv2.png/v1/fill/w_441,h_543,al_c,lg_1,q_85,enc_avif,quality_auto/fidd-separador.png&quot; alt="NFIDD RGB" title="FIDD RGB">
+<div class="produto-content">
+<h3>FIDD RGB</h3>
+<p class="preco">R$ 702,84</p>
+<p class="descricao">Teclado mecânico 60% com Switch Pink Magnético K683BW-RGB PT.</p>
+<a href="https://www.amazon.com.br/Teclado-Magn%C3%A9tico-Redragon-Branco-K683BW-RGB/dp/B0DLRSNCZZ/ref=asc_df_B0DLRSNCZZ?mcid=4e7482be6c153a77b8b39432a478daac&tag=googleshopp00-20&linkCode=df0&hvadid=709884703639&hvpos=&hvnetw=g&hvrand=10415509567645012525&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9207545&hvtargid=pla-2387918267480&psc=1&hvocijid=10415509567645012525-B0DLRSNCZZ-&hvexpln=0&language=pt_BR&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
 
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/390741033/h620-9204-2-942ahmfe6n.png" alt="Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco" title="Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco">
-                    <div class="produto-content">
-                        <h3>Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco</h3>
-                        <p class="preco">R$ 399,99</p>
-                        <p class="descricao">O Redragon Vibecore 700NC é o headset perfeito para quem busca imersão total, conforto premium e liberdade sem fios. Equipado com Cancelamento de Ruído Ativo (ANC), drivers de 40mm e bateria de longa duração, ele entrega uma experiência sonora de alto nível tanto para jogos quanto para músicas, filmes e séries.</p>
-                        <a href="https://www.redragon.store/headset-gamer-redragon-vibecore-700nc-h620-anc-bluetooth-e-ate-100h-de-bateria-branco" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="produto">
+<img src="https://m.media-amazon.com/images/I/61sALnSpjHL._AC_UF894,1000_QL80_.jpg&quot; alt="Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja" title="Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja">
+<div class="produto-content">
+<h3>Teclado Mecânico Gamer Redragon Wyvern Pro RGB Branco, Preto e Laranja</h3>
+<p class="preco">R$ 489,99</p>
+<p class="descricao">O Teclado Mecânico Gamer Redragon Wyvern Pro RGB une estilo, conforto e alto desempenho. Equipado com Switches Mint Mambo Lineares, proporciona toques suaves e silenciosos, além de hotswap (Pro Swap) compatível com switches mecânicos de 5 pinos. Seu layout ABNT2 em formato full size é perfeito para quem não abre mão do teclado numérico.</p>
+<a href="https://www.redragon.store/teclado-mecanico-gamer-redragon-wyvern-pro-rgb-branco-preto-e-laranja&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
 
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/398952528/h540-pro-9162-1-qyd6ypsmrm.png" alt="Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma" title="Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma">
-                    <div class="produto-content">
-                        <h3>Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma</h3>
-                        <p class="preco">R$ 269,99</p>
-                        <p class="descricao">O Redragon Luna Pro H540-PRO foi desenvolvido para quem busca uma experiência sonora mais natural e imersiva.</p>
-                        <a href="https://www.redragon.store/headset-gamer-redragon-luna-pro-h540-pro-open-back-sem-fio-24ghz-bluetooth-p2-driver-53mm-multiplataforma" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="produto">
+<img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/178191539/ad51476f01.jpg&quot; alt="Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)" title="Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)">
+<div class="produto-content">
+<h3>Switch Mecânico Redragon Bullet QT – Tactile | Kit com 24 Unidades (A113QT)</h3>
+<p class="preco">R$ 80,00</p>
+<p class="descricao">Eleve sua experiência gamer com o Switch Mecânico Redragon Bullet QT. Desenvolvido para quem busca precisão, resposta rápida e sensação tátil marcante, esse kit de 24 unidades é perfeito para quem deseja personalizar o teclado mecânico com performance de alto nível.</p>
+<a href="https://www.redragon.store/switch-para-teclado-mecanico-tactile-kit-com-24-modelo-bullet-qt&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
 
-                <div class="produto">
-                    <img src="https://cdn.awsli.com.br/800x800/1318/1318167/produto/380575899/ca608w-1-0vk5d40o96.png" alt="Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W)                    " title="Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W)">
-                    <div class="produto-content">
-                        <h3>Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W)</h3>
-                        <p class="preco">R$ 545,00</p>
-                        <p class="descricao">O Gabinete Gamer Redragon Edge Branco (CA-608W) é um modelo Mid Tower premium com layout interno rotacionado, permitindo montar o setup deitado com a placa de vídeo em pé. Com painéis em vidro temperado e design chanfrado em 45 graus, destaca-se por seu alto fluxo de ar e estética moderna.</p>
-                        <a href="https://www.redragon.store/gabinete-gamer-redragon-edge-branco-design-rotacionado-vidro-temperado-e-fluxo-de-ar-avancado-ca-608w" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="produto">
+<img src="https://cdn.awsli.com.br/1318/1318167/produto/62980808/0f67d8c4f4.jpg " alt="Kit com 8 switch para Teclados Mecânicos Redragon MKII" title="Kit com 8 switch para Teclados Mecânicos Redragon MKII">
+<div class="produto-content">
+<h3>Kit com 8 switch para Teclados Mecânicos Redragon MKII</h3>
+<p class="preco">R$ 40,00</p>
+<p class="descricao">O Kit com 8 Switches Redragon MK2 é a solução ideal para quem deseja personalizar, testar ou substituir switches em teclados mecânicos Redragon compatíveis com tecnologia DIY (switches removíveis).Perfeito para quem quer experimentar diferentes tipos de acionamento antes de adquirir um novo teclado ou realizar a substituição de teclas específicas para melhorar a performance em jogos e digitação.</p>
+<a href="https://www.redragon.store/kitswitches&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
 
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJkGeaym6HAIHWORkGOTen8ry9sdPr4YM6w&s" alt="Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR" title="Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR">
-                    <div class="produto-content">
-                        <h3>Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR</h3>
-                        <p class="preco">R$ 689,99</p>
-                        <p class="descricao">O Gabinete Gamer Redragon Eternal Pro CA-613BR foi criado para quem quer montar um setup realmente diferenciado, combinando visual de alto impacto, excelente compatibilidade e recursos premium em um projeto moderno no estilo aquário.</p>
-                        <a href="https://www.redragon.store/gabinete-gamer-redragon-eternal-pro-preto-e-vermelho-com-tela-lcd-43-mid-tower-aquario-sem-fans-ca-613br" target="_blank" class="btn-comprar">Comprar Agora</a>
-                    </div>
-                </div>
+<div class="produto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3jOEqtCweKL3iA5rZKl0J86EkpuA8vbTFg&s&quot; alt="Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT" title="Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT">
+<div class="produto-content">
+<h3>Mouse Gamer Redragon Bludhound Lite Preto Ultraleve 41g PAW3313 10000 DPI Honeycomb Cabo USB-C Paracord M617-LIT</h3>
+<p class="preco">R$ 99,00</p>
+<p class="descricao">Se você busca o máximo de leveza possível para performance competitiva, o Redragon Bludhound Lite M617-LIT foi feito para isso.</p>
+<a href="https://www.redragon.store/mouse-gamer-redragon-bludhound-lite-preto-ultraleve-41g-paw3313-10000-dpi-honeycomb-cabo-usb-c-paracord-m617-lit&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
 
-            </div>
-        </section>
+<div class="produto">
+<img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/376158678/7f632be77b756dbb46f0f478b238a867-i25aj4dmxa.png&quot; alt="Mouse Gamer Redragon Griffin Preto - M602-KS V2" title="Mouse Gamer Redragon Griffin Preto - M602-KS V2">
+<div class="produto-content">
+<h3>Mouse Gamer Redragon Griffin Preto - M602-KS V2</h3>
+<p class="preco">R$ 142,00</p>
+<p class="descricao">Descubra o poder do Mouse Redragon Griffin Wireless M602-KS, projetado para oferecer desempenho excepcional em qualquer ambiente de trabalho ou jogo. Equipado com sensor Pixart PAW3104 e ajustável até 8000 DPI, este mouse garante precisão milimétrica e resposta ágil para movimentos rápidos e precisos.</p>
+<a href="https://www.redragon.store/mouse-gamer-redragon-griffin-preto-m602-ks&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/390741033/h620-9204-2-942ahmfe6n.png&quot; alt="Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco" title="Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco">
+<div class="produto-content">
+<h3>Headset Gamer Redragon Vibecore 700NC H620 – ANC, Bluetooth e até 100h de Bateria Branco</h3>
+<p class="preco">R$ 399,99</p>
+<p class="descricao">O Redragon Vibecore 700NC é o headset perfeito para quem busca imersão total, conforto premium e liberdade sem fios. Equipado com Cancelamento de Ruído Ativo (ANC), drivers de 40mm e bateria de longa duração, ele entrega uma experiência sonora de alto nível tanto para jogos quanto para músicas, filmes e séries.</p>
+<a href="https://www.redragon.store/headset-gamer-redragon-vibecore-700nc-h620-anc-bluetooth-e-ate-100h-de-bateria-branco&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/398952528/h540-pro-9162-1-qyd6ypsmrm.png&quot; alt="Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma" title="Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma">
+<div class="produto-content">
+<h3>Headset Gamer Redragon Luna Pro H540-PRO Open Back Sem Fio 2.4GHz + Bluetooth + P2 | Driver 53mm | Multiplataforma</h3>
+<p class="preco">R$ 269,99</p>
+<p class="descricao">O Redragon Luna Pro H540-PRO foi desenvolvido para quem busca uma experiência sonora mais natural e imersiva.</p>
+<a href="https://www.redragon.store/headset-gamer-redragon-luna-pro-h540-pro-open-back-sem-fio-24ghz-bluetooth-p2-driver-53mm-multiplataforma&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://cdn.awsli.com.br/800x800/1318/1318167/produto/380575899/ca608w-1-0vk5d40o96.png&quot; alt="Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W) " title="Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W)">
+<div class="produto-content">
+<h3>Gabinete Gamer Redragon Edge Branco – Design Rotacionado, Vidro Temperado e Fluxo de Ar Avançado (CA-608W)</h3>
+<p class="preco">R$ 545,00</p>
+<p class="descricao">O Gabinete Gamer Redragon Edge Branco (CA-608W) é um modelo Mid Tower premium com layout interno rotacionado, permitindo montar o setup deitado com a placa de vídeo em pé. Com painéis em vidro temperado e design chanfrado em 45 graus, destaca-se por seu alto fluxo de ar e estética moderna.</p>
+<a href="https://www.redragon.store/gabinete-gamer-redragon-edge-branco-design-rotacionado-vidro-temperado-e-fluxo-de-ar-avancado-ca-608w&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJkGeaym6HAIHWORkGOTen8ry9sdPr4YM6w&s&quot; alt="Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR" title="Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR">
+<div class="produto-content">
+<h3>Gabinete Gamer Redragon Eternal Pro Preto e Vermelho com Tela LCD 4.3” Mid Tower Aquário Sem Fans CA-613BR</h3>
+<p class="preco">R$ 689,99</p>
+<p class="descricao">O Gabinete Gamer Redragon Eternal Pro CA-613BR foi criado para quem quer montar um setup realmente diferenciado, combinando visual de alto impacto, excelente compatibilidade e recursos premium em um projeto moderno no estilo aquário.</p>
+<a href="https://www.redragon.store/gabinete-gamer-redragon-eternal-pro-preto-e-vermelho-com-tela-lcd-43-mid-tower-aquario-sem-fans-ca-613br&quot; target="_blank" class="btn-comprar">Comprar Agora</a>
+</div>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<div>
+<h3>Fale conosco</h3>
+<form>
+<input type="text" placeholder="Seu nome">
+<input type="email" placeholder="Seu e-mail">
+<textarea placeholder="Sua mensagem..." rows="4"></textarea>
+<button type="submit">Enviar Mensagem</button>
+</form>
+</div>
+
+<div>
+<h3>Links Rápidos</h3>
+<p>Sobre nós</p>
+<p>Produtos</p>
+<p>Promoções</p>
+<p>Contato</p>
+</div>
+
+<div>
+<h3>Atendimento</h3>
+<p>(41) 99999-9999</p>
+<p>Curitiba, PR</p>
+<p>suporte@techloja.com</p>
+</div>
+</footer>
+
+</body>
+</html>
